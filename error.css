@@ -1,0 +1,74 @@
+.error-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #0c1b3a, #050814);
+  overflow: hidden;
+}
+
+.error-box {
+  position: relative;
+  padding: 60px 50px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.error-glow {
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(circle, rgba(32,211,255,0.15), transparent 70%);
+  z-index: -1;
+}
+
+.error-code {
+  font-size: 160px;
+  font-weight: 800;
+  color: #20d3ff;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.error-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.error-text {
+  font-size: 15px;
+  color: #b9c0d4;
+  max-width: 420px;
+  margin: 0 auto 35px;
+}
+
+.error-btn {
+  display: inline-block;
+  padding: 12px 36px;
+  border-radius: 30px;
+  background: #20d3ff;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.error-btn:hover {
+  background: #ffffff;
+  color: #000;
+}
+
+@media (max-width: 576px) {
+  .error-code {
+    font-size: 110px;
+  }
+
+  .error-box {
+    padding: 45px 25px;
+  }
+}
